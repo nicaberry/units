@@ -1,0 +1,19 @@
+#main {
+    width: 100%;
+
+    background-color: rgb(251, 238, 214);;
+}
+
+#main .wrap {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#main .wrap section {
+    margin: 30px;
+}
+
+#main .wrap section ul {
+    font-family: 'Open Sans Condensed', sans-serif;
+}

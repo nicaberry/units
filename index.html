@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css/main.css">
+    <link rel="stylesheet" href="./style.css/header.css">
+    <link rel="stylesheet" href="./style.css/aside.css">
+    <link rel="stylesheet" href="./style.css/contant.css">
+    <link rel="stylesheet" href="./style.css/footer.css">
+    <link rel="stylesheet" href="./style.css/menu.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="wrap">
+            <div class="headerName">UNITS</div>
+        </div>
+    </header>
+
+    <aside id="aside">
+        <div class="wrap">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#px">px</a></li>
+                    <li class="menu-item"><a href="#em">em</a></li>
+                    <li class="menu-item"><a href="#rem">rem</a></li>
+                    <li class="menu-item"><a href="#percent">%</a></li>
+                    <li class="menu-item menu-query"><a href="#viewport">viewport</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main id="main">
+        <div class="wrap">
+            <section id="px">
+                <h2>&#127827; px</h2>
+                <ul>
+                    <li>Пиксели относительны к размеру экрана устройства.</li>
+                    <li>Браузер все значения пересчитает в пиксели.</li>
+                    <li>Кегль по умолчанию во всех браузерах — 16 пикселей.</li>
+                </ul>
+            </section>
+            <section id="em">
+                <h2>&#127827; em</h2>
+                <ul>
+                    <li>Размеры в em – относительные, они определяются по текущему контексту.</li>
+                    <li>Расчитывается вот так: если 10px = 1em, то 10em = 10px * 10 = 100px.</li>
+                    <li>Em широко используются для типографии, такой как заголовки, текста, параграфы и с элементами ассоциированными с ней, такими как внешние отступы и внутренние.</li>
+                    <li>Позволяет масштабировать кегль всей страницы или отдельных её частей меняя только базовые значения, а не указывая новые размеры у каждого элемента.</li>
+                </ul>
+            </section>
+            <section id="rem">
+                <h2> &#127827; rem</h2>
+                <ul>
+                    <li>Единица rem (root em) задаёт размер относительно размера шрифта элемента "html". Если размер шрифта "html" элемента равен 16px, то 1rem = 16px.</li>
+                    <li>Расчитывается вот так: если 14px = 1rem, то 10rem = 14px * 10 = 140px.</li>
+                    <li>Элементы, размер которых задан в rem, не зависят друг от друга и от контекста – и этим похожи на px, а с другой стороны они все заданы относительно размера шрифта "html".</li>
+                </ul>
+            </section>
+            <section id="percent">
+                <h2>&#127827; %</h2>
+                <ul>
+                    <li>Проценты зависят от значения свойства родителя с тем же названием, но не всегда.</li>
+                    <li>Исключения, в которых % берётся не так:
+                        <ul>
+                            <li>При установке свойства margin-left в %, процент берётся от ширины родительского блока, а вовсе не от его margin-left.</li>
+                            <li>При установке свойства line-height в %, процент берётся от текущего размера шрифта, а вовсе не от line-height родителя.</li>
+                            <li>Для width/height обычно процент от ширины/высоты родителя, но при position:fixed, процент берётся от ширины/высоты окна (а не родителя и не документа).</li>
+                        </ul>
+                    </li>
+                    <li>Проценты широко используются для выставления ширины и высоты контейнеров, дивов и для адаптивной графики.</li>
+                </ul>
+            </section>
+            <section id="viewport">
+                <h2>&#127827; vw, vh, vmin, vmax</h2>
+                <ul>
+                    <li>vw – 1% ширины окна.</li>
+                    <li>vh – 1% высоты окна.</li>
+                    <li>vmax – наибольшее из (vw, vh).</li>
+                    <li>vmin – наименьшее из (vw, vh), в IE9 обозначается vm.</li>
+                    <li>Эти значения были созданы, в первую очередь, для поддержки мобильных устройств.</li>
+                    <li>Их основное преимущество – в том, что любые размеры, которые в них заданы, автоматически масштабируются при изменении размеров окна.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="wrap">
+            <p>&#127827;2020&#127827;</p>
+        </div>
+    </footer>
+
+    <a href="#header" id="btn-up" title="up">&#127808;</a>
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+</body>
+</html>
