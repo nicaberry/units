@@ -1,0 +1,26 @@
+body {
+    padding: 30px;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.oneDuck,
+.twoDducks,
+.threeDucks {
+    font-size: 16px;
+}
+
+.duckControl {
+    font-size: 16px;
+}
+
+.duckControl label {
+    font-weight: bold;
+}
+
+.containerForDucks {
+    font-size: 16px;
+}

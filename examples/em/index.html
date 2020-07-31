@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="duckControl">
+        <button id="btnOriginSize">Изначальный размер font-size всех уточек 16em, а у контейнера 16px</button><br>
+
+        <label for="pxContainerForDucks">container for ducks:</label><br>
+        <input id="pxContainerForDucks" type="text" placeholder="введите размер"><button id="btnPxContainerForDucks">применить px</button><br>
+
+        <label for="emOneDuck">one duck:</label><br>
+        <input id="emOneDuck" type="text" placeholder="введите размер утки"><button id="btnEmOneDuck">применить em</button><br>
+
+        <label for="emTwoDucks">two ducks:</label><br>
+        <input id="emTwoDucks" type="text" placeholder="введите размер уточек"><button id="btnEmTwoDucks">применить em</button><br>
+
+        <label for="emThreeDucks">three ducks:</label><br>
+        <input id="emThreeDucks" type="text" placeholder="введите размер уточек"><button id="btnEmThreeDucks">применить em</button><br>
+
+        <label for="emAllDucks">all ducks:</label><br>
+        <input id="emAllDucks" type="text" placeholder="размер для всех уточек"><button id="btnEmAllDucks">применить em</button><br>
+    </div>
+
+    <div class="containerForDucks">
+        <ul>
+            <li class="oneDuck">&#129414;
+                <ul>
+                    <li class="twoDucks">&#129414; &#129414;
+                        <ul>
+                            <li class="threeDucks">
+                                &#129414;&#129414;&#129414; 
+                            </li>
+                        </ul> 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+   <script src="scripts/main.js"></script>
+</body>
+</html>
